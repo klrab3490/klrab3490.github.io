@@ -97,17 +97,17 @@ export default function Home()
             <div className="text-center mx-auto shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 dark:text-white flex-1">
               <Image className='mx-auto' src={design} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2 text-teal-800 dark:text-teal-400'>Beautiful Designs</h3>
-              <p className='py-2 text-blac dark:text-white'>
+              <p className='py-2 text-black dark:text-white'>
                 Creative elegant designs suited for your needs following core design theory.
               </p>
-              <h3 className='text-teal-600 t dark:text-teal-400 py-4'>Design Tools I Use:</h3>
+              <h3 className='text-teal-600 dark:text-teal-400 py-4'>Design Tools I Use:</h3>
               <p className='text-gray-800 py-1 dark:text-white'>Photoshop</p>
               <p className='text-gray-800 py-1 dark:text-white'>Illustrator</p>
             </div>
             <div className="text-center mx-auto shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1 dark:text-white">
               <Image className='mx-auto' src={code} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2 text-teal-800 dark:text-teal-400'>Coding Language</h3>
-              <p className='py-2 text-blac dark:text-white'>
+              <p className='py-2 text-black dark:text-white'>
                 The languages that I am knowlegable in is as follows.
               </p>
               <h3 className='text-teal-600 dark:text-teal-400 py-4'>Languages I Use Are:</h3>
@@ -119,7 +119,7 @@ export default function Home()
             <div className="text-center mx-auto shadow-lg p-10 rounded-xl my-10 text-teal-800 dark:bg-gray-700 flex-1 dark:text-white">
               <Image className='mx-auto' src={databases} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-teal-400'>Databases </h3>
-              <p className='py-2 text-blac dark:text-white'>
+              <p className='py-2 text-black dark:text-white'>
                 The Databases that I am knowlegable in is as follows.
               </p>
               <h3 className='text-teal-600 dark:text-teal-400 py-4'>Databases I Use Are:</h3>
