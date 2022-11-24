@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { 
   AiFillGithub,
   AiOutlineWhatsApp,
@@ -16,6 +16,8 @@ import design from "../public/design.png";
 import code from "../public/code.png";
 import databases from "../public/databases.png";
 import { useState } from 'react';
+import Typerwriter from 'typewriter-effect';
+
 
 export default function Home() 
 {
@@ -23,7 +25,7 @@ export default function Home()
   return (
     <div className={darkMode ? "dark":""}>
       <Head>
-        <title>Rahul Portfolio</title>
+        <title>Rahul Portfolio</title>     
       </Head>
 
       <main className='" bg-white px-10 m:px-20 lg:px-40 dark:bg-gray-900'>
@@ -43,10 +45,25 @@ export default function Home()
             <h2 className='font-burtons text-5xl py-2 text-teal-800 dark:text-teal-400 font-medium md:text-6xl '>
               Rahul A B
             </h2>
-            <h3 className=' text-2xl py-2 md:text-3xl text-black dark:text-white'>
-              Developer and Designer
-            </h3>
-            <p className=' text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white' >
+            <div className="text-2xl py-2 md:text-3xl text-black dark:text-white">
+              <Typerwriter 
+                onInit={(typewriter) =>{
+                  typewriter.typeString("I'm a Programmer")
+                  .pauseFor(2000)
+                  .deleteChars(10)
+                  .typeString("Developer")
+                  .pauseFor(2000)
+                  .deleteChars(9)
+                  .typeString("Designer")
+                  .pauseFor(2000)
+                  .deleteChars(8)
+                  .deleteAll()
+                  .start();
+                }
+              }
+              />
+            </div>
+            <p className='font-Dancing text-3xl py-3 leading-8 text-gray-800 md:text-4xl max-w-lg mx-auto dark:text-white' >
             Freelancer providing services for programming and design content
             needs. Join me down below and let's get cracking!
             </p>
@@ -127,6 +144,9 @@ export default function Home()
             </div>
           </div>
         </section>
+
+
+
       </main>
     </div>
   );
