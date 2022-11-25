@@ -11,13 +11,17 @@ import {
   FaTelegramPlane,
   FaDiscord} from "react-icons/fa";
 import Image from 'next/image';
-import deved from "../public/dev-ed-wave.png";
+import deved from "../public/photo.jpg";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import databases from "../public/databases.png";
 import { useState } from 'react';
-import Typerwriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect';
 
+new Typewriter('#typewriter', {
+  autoStart: true,
+  loop: true,
+});
 
 export default function Home() 
 {
@@ -46,9 +50,10 @@ export default function Home()
               Rahul A B
             </h2>
             <div className="text-2xl py-2 md:text-3xl text-black dark:text-white">
-              <Typerwriter 
+              <Typewriter 
                 onInit={(typewriter) =>{
-                  typewriter.typeString("I'm a Programmer")
+                  typewriter.typeString("I'm a ")
+                  .typeString( "Programmer")
                   .pauseFor(2000)
                   .deleteChars(10)
                   .typeString("Developer")
@@ -58,7 +63,7 @@ export default function Home()
                   .pauseFor(2000)
                   .deleteChars(8)
                   .deleteAll()
-                  .start();
+                  .start()
                 }
               }
               />
@@ -144,9 +149,6 @@ export default function Home()
             </div>
           </div>
         </section>
-
-
-
       </main>
     </div>
   );

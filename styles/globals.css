@@ -34,9 +34,6 @@ a {
 @font-face{
   font-family: "Burtons";
   src : url("../public/Burtons.otf");
-}
-
-@font-face{
   font-family: "vt323";
   src: url("../public/VT323-Regular.ttf");
 }
