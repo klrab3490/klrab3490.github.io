@@ -10,10 +10,10 @@ module.exports = {
     extend: {
       fontFamily: {
         burtons: "burtons",
-        vt323: "vt323",
         Rampart: ["Rampart One","cursive"],
         Rubik: ["Rubik Glitch", "cursive"],
         Dancing: ["Dancing Script", "cursive"],
+        VT323: ["VT323", "monospace"],
         
       }
     },

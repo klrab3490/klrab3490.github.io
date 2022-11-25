@@ -18,10 +18,13 @@ import databases from "../public/databases.png";
 import { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 
-new Typewriter('#typewriter', {
-  autoStart: true,
-  loop: true,
-});
+<Typewriter
+  options={{
+    strings: ['Hello', 'World'],
+    autoStart: true,
+    loop: true,
+  }}
+/>
 
 export default function Home() 
 {
@@ -35,7 +38,7 @@ export default function Home()
       <main className='" bg-white px-10 m:px-20 lg:px-40 dark:bg-gray-900'>
         <section className="min-h-screen" >
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-vt323 lg:text-3xl text-black dark:text-white'>Developed By Rahul</h1>
+            <h1 className='text-xl font-VT323 lg:text-3xl text-black dark:text-white'>Developed By Rahul</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='text-black cursor-pointer text-l  lg:text-xl dark:text-white'/>
@@ -49,7 +52,7 @@ export default function Home()
             <h2 className='font-burtons text-5xl py-2 text-teal-800 dark:text-teal-400 font-medium md:text-6xl '>
               Rahul A B
             </h2>
-            <div className="text-2xl py-2 md:text-3xl text-black dark:text-white">
+            <div className=" font-VT323 text-3xl py-2 md:text-3xl text-black dark:text-white">
               <Typewriter 
                 onInit={(typewriter) =>{
                   typewriter.typeString("I'm a ")
@@ -62,10 +65,12 @@ export default function Home()
                   .typeString("Designer")
                   .pauseFor(2000)
                   .deleteChars(8)
-                  .deleteAll()
                   .start()
-                }
-              }
+                }}
+              options={{
+                autoStart: true,
+                loop: true,
+              }}
               />
             </div>
             <p className='font-Dancing text-3xl py-3 leading-8 text-gray-800 md:text-4xl max-w-lg mx-auto dark:text-white' >
@@ -107,7 +112,7 @@ export default function Home()
           </div>
         </section>
 
-        <section className='mt-5'>
+        <section className='mt-2'>
           <div>
             <h3 className='text-2xl py-1 lg:text-3xl dark:text-teal-400 text-teal-800'>Services That I Offer</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
@@ -146,6 +151,7 @@ export default function Home()
               </p>
               <h3 className='text-teal-600 dark:text-teal-400 py-4'>Databases I Use Are:</h3>
               <p className='text-gray-800 py-1 dark:text-white'>MySQL</p>
+              <p className='text-gray-800 py-1 dark:text-white'>MongoDB</p>
             </div>
           </div>
         </section>

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -34,7 +35,5 @@ a {
 @font-face{
   font-family: "Burtons";
   src : url("../public/Burtons.otf");
-  font-family: "vt323";
-  src: url("../public/VT323-Regular.ttf");
 }
 
