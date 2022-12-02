@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { 
   AiFillGithub,
@@ -18,14 +19,6 @@ import databases from "../public/databases.png";
 import { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 
-<Typewriter
-  options={{
-    strings: ['Hello', 'World'],
-    autoStart: true,
-    loop: true,
-  }}
-/>
-
 export default function Home() 
 {
   const[darkMode,setDarkMode] = useState(true);
@@ -37,7 +30,7 @@ export default function Home()
 
       <main className='" bg-white px-10 m:px-20 lg:px-40 dark:bg-gray-900'>
         <section className="min-h-screen" >
-          <nav className='py-10 mb-12 flex justify-between'>
+          <nav className='py-5 mb-6 flex justify-between'>
             <h1 className='text-xl font-VT323 lg:text-3xl text-black dark:text-white'>Developed By Rahul</h1>
             <ul className='flex items-center'>
               <li>
@@ -80,35 +73,35 @@ export default function Home()
           </div>
           <div>
             <p className='text-3xl flex justify-center font-burtons gap-8 text-teal-800 dark:text-teal-400 py-3'>Connect with me</p>
-            <div className='text-3xl flex justify-center gap-4 text-gray-600 py-2 lg:gap-8 lg:text-4xl'>  
-              <a href='https://www.facebook.com/rahul.bushi/'>
+            <div className='text-3xl flex justify-center gap-4 text-gray-600 py-2 lg:gap-8 lg:text-4xl'>   
+              <Link href='https://www.facebook.com/rahul.bushi/'>
                 <AiFillFacebook />
-              </a>
-              <a href='https://www.instagram.com/kl.rab_3490/'>
+              </Link>
+              <Link href='https://www.instagram.com/kl.rab_3490/'>
                 <AiFillInstagram />
-              </a>
-              <a href='https://twitter.com/klrab_3490_'>
+              </Link>
+              <Link href='https://twitter.com/klrab_3490_'>
                 <AiFillTwitterCircle />
-              </a>
-              <a href='https://github.com/klrab3490'>
+              </Link>
+              <Link href='https://github.com/klrab3490'>
                 <AiFillGithub />
-              </a>
-              <a href='https://t.me/klrab_3490'>
+              </Link>
+              <Link href='https://t.me/klrab_3490'>
                 <FaTelegramPlane />
-              </a>
-              <a href='https://wa.me/7994542331?text=Hi'>
+              </Link>
+              <Link href='https://wa.me/7994542331?text=Hi'>
                 <AiOutlineWhatsApp />
-              </a>
-              <a href='https://www.linkedin.com/in/rahul-a-b-0044b1232/'>
+              </Link>
+              <Link href='https://www.linkedin.com/in/rahul-a-b-0044b1232/'>
                 <AiFillLinkedin />
-              </a>
-              <a href='https://discordapp.com/users/kl.rab_3490#8475'>
+              </Link>
+              <Link href='https://discordapp.com/users/kl.rab_3490#8475'>
                 <FaDiscord/>
-              </a>
+              </Link>
             </div>
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-800 dark:from-teal-400 to-slate-200 rounded-full w-60 h-60 mt-10 overflow-hidden lg:h-100 lg:w-100'>
-            <Image src={deved} layout="fill" objectFit="cover"/> 
+          <div className='relative mx-auto rounded-full w-60 h-60 mt-5 overflow-hidden lg:h-100 lg:w-100'>
+            <Image src={deved} /> 
           </div>
         </section>
 
@@ -155,6 +148,39 @@ export default function Home()
             </div>
           </div>
         </section>
+        <footer class="text-gray-600 body-font">
+          <div className=' justify-end h-10'>
+            <div className=' text-xl flex justify-end gap-4 text-gray-600  lg:gap-3'>   
+              <Link href='https://www.facebook.com/rahul.bushi/'>
+                <AiFillFacebook />
+              </Link>
+              <Link href='https://www.instagram.com/kl.rab_3490/'>
+                <AiFillInstagram />
+              </Link>
+              <Link href='https://twitter.com/klrab_3490_'>
+                <AiFillTwitterCircle />
+              </Link>
+              <Link href='https://github.com/klrab3490'>
+                <AiFillGithub />
+              </Link>
+              <Link href='https://t.me/klrab_3490'>
+                <FaTelegramPlane />
+              </Link>
+              <Link href='https://wa.me/7994542331?text=Hi'>
+                <AiOutlineWhatsApp />
+              </Link>
+              <Link href='https://www.linkedin.com/in/rahul-a-b-0044b1232/'>
+                <AiFillLinkedin />
+              </Link>
+              <Link href='https://discordapp.com/users/kl.rab_3490#8475'>
+                <FaDiscord/>
+              </Link>
+              <div>
+                <br />
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   );
