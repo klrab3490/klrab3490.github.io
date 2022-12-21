@@ -148,7 +148,7 @@ export default function Home()
             </div>
           </div>
         </section>
-        <footer class="text-gray-600 body-font">
+        <footer className="text-gray-600 body-font">
           <div className=' justify-end h-10'>
             <div className=' text-xl flex justify-end gap-4 text-gray-600  lg:gap-3'>   
               <Link href='https://www.facebook.com/rahul.bushi/'>
