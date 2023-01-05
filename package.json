@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
+    "install": "^0.13.0",
     "next": "13.0.4",
     "next-swc-win32-x64-msvc": "^0.0.1-security",
     "react": "^18.2.0",
