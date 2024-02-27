@@ -1,13 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { 
-  AiFillGithub,
-  AiOutlineWhatsApp,
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillFacebook,
-  AiFillInstagram } from "react-icons/ai";
+import { AiFillGithub, AiOutlineWhatsApp, AiFillTwitterCircle, AiFillLinkedin, AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import {
   FaTelegramPlane,
   FaDiscord} from "react-icons/fa";
